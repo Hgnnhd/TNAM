@@ -1,0 +1,21 @@
+train:
+  dataset: 2012
+  epochs: 30
+  batch_size: 1024
+  eval_batch_size: 1024
+  learning_rate: 0.001
+  seed: 42
+  nfold: 5
+  gpu: 0
+  model: TNAM
+  hours: None
+  amp: false
+  compile: false
+
+models:
+  TNAM:
+    input_dim: null
+    hidden_size: 32
+    num_layers: 1
+    dropout_rate: 0.2
+    time: null
